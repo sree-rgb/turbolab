@@ -4,7 +4,7 @@ from os import walk
 
 def find_duplicates():
 	contents={}
-	for filenumber in range(0,99):
+	for filenumber in range(0,100):
 		file=open(f'data/{filenumber}.txt','r')
 		content=file.read()
 		try:

@@ -6,9 +6,9 @@ def stringEvaluate(the_string):
 	the_string=the_string[::-1]
 
 	for x in range(len(the_string)):
-		output_number+=(len(the_string[x:])*27)+unitCharacterValue(the_string[x])
-		print(len(the_string[x:])*26,unitCharacterValue(the_string[x]))
+		placevalue=(len(the_string[x:])*27)*(unitCharacterValue(the_string[x])+1)
+		output_number+=placevalue
 	return output_number
 if __name__ == '__main__':
-	print(stringEvaluate('AAA'))
+	print(stringEvaluate('ABA'))
 
